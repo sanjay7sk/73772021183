@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FeedBack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact {
+            width: 100%;
+            height: 100vh;
+            /* padding-left: 40%; */
+            align-items: center;
+            background-color:aliceblue;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        .border-table{
+            border: 2px solid black;
+            padding: 50px;
+            background-color:bisque;
+        }
+        .submit{
+            color: white;
+            background-color:blueviolet;
+            padding: 1px 8px;
+            border-radius: 5px;
+            position:relative;
+            font-size: 13px;
+            margin: 2px 2px;
+            cursor:auto;
+        }
+        /* .footer {
+            padding-right: 40px;
+            width: 100%;
+            position: relative;
+            right: -40.5%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="contact">
+        <div class="border-table">
+            <table>
+                <div class="need">
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" placeholder="Name" name="name" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="reg">RegisterNumber</label></td>
+                        <td><input type="number" id="reg" placeholder="Reg No" name="reg" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" placeholder="Email" name="email" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">PhoneNumber</label></td>
+                        <td><input type="number" id="phone" placeholder="PhoneNo" name="phone" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="radio" name="gender">Male <input type="radio" name="gender">Female <br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comments">Comments</label></td>
+                        <td><textarea id="comments" rows="3" cols="20" name="comments"></textarea></td>
+                    </tr>
+                </div>
+            </table>
+            <div class="footer">
+                <input class="submit" type="submit" value="Submit">
+                <input class="submit" type="reset" value="Clear">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
